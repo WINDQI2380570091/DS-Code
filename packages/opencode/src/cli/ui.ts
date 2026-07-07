@@ -3,10 +3,10 @@ import { Schema } from "effect"
 import { logo as glyphs } from "./logo"
 
 const wordmark = [
-  `⠀                                ▄     `,
-  `█▀▀█ █▀▀█ █▀▀█ █▀▀▄ █▀▀▀ █▀▀█ █▀▀█ █▀▀█`,
-  `█  █ █  █ █▀▀▀ █  █ █    █  █ █  █ █▀▀▀`,
-  `▀▀▀▀ █▀▀▀ ▀▀▀▀ ▀  ▀ ▀▀▀▀ ▀▀▀▀ ▀▀▀▀ ▀▀▀▀`,
+  `     ▄             `,
+  `█▀▀▄ █▀▀█  █▀▀▀ █▀▀█ █▀▀█ █▀▀█`,
+  `█  █ █▀▀▀  █    █  █ █  █ █▀▀▀`,
+  `▀▀▀▀ ▀▀▀▀  ▀▀▀▀ ▀▀▀▀ ▀▀▀▀ ▀▀▀▀`,
 ]
 
 export class CancelledError extends Schema.TaggedErrorClass<CancelledError>()("UICancelledError", {}) {}
@@ -59,14 +59,14 @@ export function logo(pad?: string) {
   const result: string[] = []
   const reset = "\x1b[0m"
   const left = {
-    fg: "\x1b[90m",
-    shadow: "\x1b[38;5;235m",
-    bg: "\x1b[48;5;235m",
+    fg: "\x1b[94m",
+    shadow: "\x1b[38;5;24m",
+    bg: "\x1b[48;5;17m",
   }
   const right = {
-    fg: reset,
-    shadow: "\x1b[38;5;238m",
-    bg: "\x1b[48;5;238m",
+    fg: "\x1b[96m",
+    shadow: "\x1b[38;5;26m",
+    bg: "\x1b[48;5;18m",
   }
   const gap = " "
   const draw = (line: string, fg: string, shadow: string, bg: string) => {
