@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -rn \"logo\\\\.png\\\\|preview-opencode-logo\\\\|opencode-logo\" 'D:/Code/Project/DS Code/opencode-1.17.14/packages/' --include=*.json --include=*.css)",
+      "Bash(grep -rn \"logo\\\\.png\\\\|preview-opencode-logo\\\\|opencode-logo-light\\\\.png\\\\|opencode-logo-dark\\\\.png\\\\|opencode-logo-light-square\\\\.png\\\\|opencode-logo-dark-square\\\\.png\" 'D:/Code/Project/DS Code/opencode-1.17.14/packages/' --include=*.tsx --include=*.ts --include=*.jsx --include=*.js --include=*.astro --include=*.vue --include=*.html)"
+    ]
+  }
+}
